@@ -16,3 +16,10 @@ config RTC_ATMEL_SAM
 	depends on DT_HAS_ATMEL_SAM_RTC_ENABLED
 	help
 	  Atmel Real-Time Clock (RTC) driver used on SAM SoC series.
+
+config RTC_MCHP_G1
+	bool "Microchip RTC G1 driver"
+	default y
+	depends on DT_HAS_MICROCHIP_RTC_G1_ENABLED
+	help
+	  Microchip Real-Time Clock (RTC) G1 driver used on SAM SoC series.
